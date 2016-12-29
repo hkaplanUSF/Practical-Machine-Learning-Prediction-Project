@@ -217,9 +217,9 @@ Detection Rate         0.2845   0.1917   0.1735   0.1624   0.1834
 Detection Prevalence   0.2854   0.1923   0.1758   0.1630   0.1835
 Balanced Accuracy      0.9994   0.9950   0.9961   0.9950   0.9989
 </pre>
-Out of Sample Error and Overfitting. - 1- .9942 = .0058
+
 <pre class="code">
-#Cross Validation
+#Cross Validation, Overfitting. error- 1- .9942 = .0058
 myTest$predRight <- predRF==myTest$classe;
 qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
 </pre>
