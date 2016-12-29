@@ -222,6 +222,15 @@ Balanced Accuracy      0.9994   0.9950   0.9961   0.9950   0.9989
 #Cross Validation, Overfitting. error- 1- .9942 = .0058
 myTest$predRight <- predRF==myTest$classe;
 qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
+
+# Plot the Random Forest model
+layout(matrix(c(1,2),nrow=1),
+       width=c(4,1))
+par(mar=c(5,4,4,0))
+plot(modFitRF, log="y",  yaxt = "n")
+par(mar=c(5,0,4,2)) #No margin on the left side
+plot(c(0,1),type="n", axes=F, xlab="", ylab="")
+legend("topright", colnames(modFitRF$err.rate),col=1:4,cex=0.8,fill=1:4)
 </pre>
 
 Plot:<br>
