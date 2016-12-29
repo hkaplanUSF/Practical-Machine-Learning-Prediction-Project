@@ -146,6 +146,7 @@ Balanced Accuracy      0.7757   0.7005   0.7283  0.61375  0.72854
 ----------------------------------------------------</pre>
 </p>
 Descision Tree was fast, but accuracy was very low around 50%<br>
+You can see how much trouble the model had with predicting the classes looking at the Prediction table.<br>
 Result when run on the actual pml-testing data<br>
 <pre class="results">
 ##RESULT -
