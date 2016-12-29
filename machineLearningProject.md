@@ -5,29 +5,7 @@
 
 
 <head>
-<style>
-body{
-	margin-left: 2cm;
-}
 
-p{
-	width: 50%;
-}
-.cit{
-	font-size: 80%;
-}
-pre.code {
-    white-space: pre-wrap;
-    background-color: #ceced8;
-	width: 50%;
-}
-pre.results {
-    white-space: pre-wrap;
-    border-style: solid;
-	border-width:1px;
-	width: 50%;
-}
-</style>
 </head>
 
 <title>Practical Machine Learning Course Project - Howard Kaplan</title>
