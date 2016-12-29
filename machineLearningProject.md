@@ -1,6 +1,5 @@
 # Practical-Machine-Learning-Prediction-Project
 
-<!DOCTYPE html>
 <html>
 
 
