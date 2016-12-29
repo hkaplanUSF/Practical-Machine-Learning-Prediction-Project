@@ -7,7 +7,7 @@
 
 </head>
 
-<title>Practical Machine Learning Course Project - Howard Kaplan</title>
+
 <body>
 <div id="pageTitle">
 <h1>Practical Machine Learning Course Final Project</h1>
