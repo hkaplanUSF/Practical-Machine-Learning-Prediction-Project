@@ -238,14 +238,15 @@ Random Forest was slower to computer than DT / rpart, but accuracy was higher ab
 #####################
 ### PREDICTION ASSIGNMENT SUBMISSION ###
 ##Run chosen model (Random Forest) and Predict on the pml Testing set of 20 obsevations
+##Therefore using the Random Forest Model we can predict 
+##the class that the pml test observations fall, i.e(A,B,C,D,E)
 print(predict(modFitRF, newdata=nTest))
 
 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 
 B  A  B  A  A  E  D  B  A  A  B  C  B  A  E  E  A  B  B  B 
 Levels: A B C D E
 
-##Therefore using the Random Forest Model we can predict<br> 
-##the class that the pml test observations fall, i.e(A,B,C,D,E)
+#Number of participants in each class. I hope its 20 :)
 #predResults = table(predict(modFitRF, newdata=nTest))
 
 A B C D E 
