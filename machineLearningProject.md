@@ -51,7 +51,7 @@ df_training <- read.csv(file_dest_training, na.strings=c("NA","#DIV/0!",""), hea
 df_testing <- read.csv(file_dest_testing, na.strings=c("NA","#DIV/0!",""), header=TRUE, sep=',')
 #dim(df_testing)
 </pre>
-Next I explore and clean the data.<br>Training dataset has 19622 rows and 160 variables (columns). Testing dataset has 20 rows and 160 variables (columns).<br> There was also a lot of "NA" values.
+Next I explore and clean the data.<br>Training dataset has 19622 rows and 160 variables (columns). Testing dataset has 20 rows and 160 variables (columns).<br> There was also a lot of "NA" values, and unnecessary variable/columns.
 <pre class="code">
 ##Explore, Process and Clean Data
 head(df_training)
