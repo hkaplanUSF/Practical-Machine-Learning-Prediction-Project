@@ -227,11 +227,11 @@ qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
 Plot:<br>
 
 <img src="https://pmzfdq.by3301.livefilestore.com/y3meod_LeEYQOcIZRSeGvrOcDIX29Bhakctcov1CgTanBHddjfR8nZxEgrmWtOtm4z-U0l_NH54tJzqRltpZ-p-xZKFUVE9VxOhw98XFDxEuVWvySk1vstCtwO6UpjCfG96MyFsxjSr68FVtt6pzMLzEP21tTkdb3bJ42ZxkGS4qTM?width=740&height=505&cropmode=none" alt="errorPlot" style="width:370px; height:202px;">
-<br>
+<pre class="results">
     DT/rpart speed        vs       Random Forest
   user  system elapsed         user  system elapsed 
   10.72    3.16   14.05       26.55    0.06   26.76 
-<br>
+</pre>
 Random Forest was slower to computer than DT / rpart, but accuracy was higher about 99%, as expected<br>
 <h2>Final Random Forest Model Results</h2>
 <pre class="results">
