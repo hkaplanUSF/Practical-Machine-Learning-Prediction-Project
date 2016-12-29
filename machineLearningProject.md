@@ -217,6 +217,7 @@ Detection Rate         0.2845   0.1917   0.1735   0.1624   0.1834
 Detection Prevalence   0.2854   0.1923   0.1758   0.1630   0.1835
 Balanced Accuracy      0.9994   0.9950   0.9961   0.9950   0.9989
 </pre>
+Out of Sample Error and Overfitting. - 1- .9942 = .0058
 <pre class="code">
 #Cross Validation
 myTest$predRight <- predRF==myTest$classe;
@@ -226,9 +227,12 @@ qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
 Plot:<br>
 
 <img src="https://pmzfdq.by3301.livefilestore.com/y3meod_LeEYQOcIZRSeGvrOcDIX29Bhakctcov1CgTanBHddjfR8nZxEgrmWtOtm4z-U0l_NH54tJzqRltpZ-p-xZKFUVE9VxOhw98XFDxEuVWvySk1vstCtwO6UpjCfG96MyFsxjSr68FVtt6pzMLzEP21tTkdb3bJ42ZxkGS4qTM?width=740&height=505&cropmode=none" alt="errorPlot" style="width:370px; height:202px;">
-
 <br>
-Random Forest was slower to computer than DT / rpart, but accuracy was higher about 99%<br>
+    DT/rpart speed        vs       Random Forest
+  user  system elapsed         user  system elapsed 
+  10.72    3.16   14.05       26.55    0.06   26.76 
+<br>
+Random Forest was slower to computer than DT / rpart, but accuracy was higher about 99%, as expected<br>
 <h2>Final Random Forest Model Results</h2>
 <pre class="results">
 #####################
