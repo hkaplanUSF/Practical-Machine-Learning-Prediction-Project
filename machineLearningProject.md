@@ -12,7 +12,7 @@
 <div id="pageTitle">
 <h1>Practical Machine Learning Course Final Project</h1>
 <text style="font-size:20px">Howard Kaplan, 1.1.2017</text><br>
-Coursera - John hopkins University (MOOC)
+Coursera - John Hopkins University (MOOC)
 
 </div>
 <h2>Background</h2>
