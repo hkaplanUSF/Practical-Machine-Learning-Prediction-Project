@@ -154,6 +154,33 @@ Result when run on the actual pml-testing data<br>
     #[1] C B B C C C B B A A C B C A B B C B C B
     #Levels: A B C D E
 </pre>
+
+<pre class="code">
+#rpart with Cross-validation, 
+tc <- trainControl("cv",10)
+rpart.grid <- expand.grid(.cp=0.2)
+set.seed(1010)
+(train.rpart <- train(classe ~., data=myTrain, method="rpart",trControl=tc,tuneGrid=rpart.grid))
+</pre>
+
+<pre class="code">
+CART 
+
+11776 samples
+   52 predictor
+    5 classes: 'A', 'B', 'C', 'D', 'E' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 10600, 10599, 10599, 10598, 10597, 10598, ... 
+Resampling results:
+
+  Accuracy   Kappa
+  0.2843071  0    
+
+Tuning parameter 'cp' was held constant at a value of 0.2
+</pre>
+Accuracy is very low, this may be due to the amount of predictors.
 <br>
 --------------------------<br>
 Next I try the Random Forest Model. Classe against all the processed / cleaned data.
