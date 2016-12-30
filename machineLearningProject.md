@@ -20,9 +20,9 @@ Coursera - John hopkins University (MOOC)
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These types of devices are part of the quantified self movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. 
 </p>
 <h2>Project Goal</h2>
-The goal of your project is to predict the manner in which the 20 participants did the exercise (Unilateral Dumbbell Biceps Curl).<br> 
-This is the "classe" variable in the training set. Using the training set I test various training models, access the outcomes, and then
-<br>apply the final model(s) to the test data, to generate the prediction. The out-of-sample error will be based on the total accuracy possible 1 (100%) - the accuracy value produced by the predictive model.<br>
+<p>
+The goal of your project is to predict the manner in which the 20 participants did the exercise (Unilateral Dumbbell Biceps Curl).
+This is the "classe" variable in the training set. Using the training set I test various training models, access the outcomes, and then apply the final model(s) to the test data, to generate the prediction. <br>The out-of-sample error will be based on the total accuracy possible 1(100%) - the accuracy value produced by the predictive model.</p>
 The classe or categories that the manner of the exercise fall under are as follows:<br>
 
 <ul>
