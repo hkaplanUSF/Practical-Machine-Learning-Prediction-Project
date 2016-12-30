@@ -68,7 +68,7 @@ nTrainPrePross = nTrain
 nTrainPrePross <- nTrainPrePross[, unlist(lapply(nTrainPrePross, function(x) !any(is.na(x))))]
 </pre>
 Once cleaned the training data (nTrainPrePross) is - 19622    53<br><br>
-Next, I Load packages, Caret package and Rattle Package. And, Create/partition Train 60% and Test 40% sets from pml training data.
+Next, I Load packages, Caret package and Rattle Package. And, Create/partition Train 60% and Test 40% sets from pml training data. The partioned data will be used for cross-validation. 
 <pre class="code">
 ###############
 ##Load packages
@@ -220,7 +220,7 @@ Balanced Accuracy      0.9994   0.9950   0.9961   0.9950   0.9989
 </pre>
 
 <pre class="code">
-#Cross Validation, Overfitting. error- 1- .9942 = .0058
+#Cross Validation, Overfitting.  out-of-sample error is: - 1- .9942 = .0058
 myTest$predRight <- predRF==myTest$classe;
 qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
 
