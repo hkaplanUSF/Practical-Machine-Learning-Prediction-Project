@@ -105,7 +105,7 @@ fancyRpartPlot(modDT$finalModel)
 predDT <- predict(modDT, myTest) 
 confusionMatrix(predDT, myTest$classe)## <------
 </pre>
-<p>
+
 Result when run on test data partition<br>
 <img src="https://98zfdq.by3301.livefilestore.com/y3mdqJXNthr9IOfStTEar-hHuTSX6DQFyu20WeaqkgRNvySw7yjB4pUKWoVmpAoGQsukOLLLHlb1qlQpIv4HF_P1bphkIJ3NfWx8lo1dIIfLWN_08oQpp_gF161Dnoe9lO7G-pEMZI9yEFMfiM0HDv1g17ctyCB0xKVYVyBk1dYbZI?width=480&height=480&cropmode=none" alt="rpartPlot">
 
@@ -160,7 +160,11 @@ Result when run on the actual pml-testing data<br>
 tc <- trainControl("cv",10)
 rpart.grid <- expand.grid(.cp=0.2)
 set.seed(1010)
-(train.rpart <- train(classe ~., data=myTrain, method="rpart",trControl=tc,tuneGrid=rpart.grid))
+modDTCV <- train(classe ~., data=myTrain, method="rpart",trControl=tc,tuneGrid=rpart.grid)
+
+plot(modDTCV$results, main="")
+predDTCV <- predict(modDTCV, myTest) 
+confusionMatrix(predDTCV, myTest$classe)
 </pre>
 
 <pre class="code">
