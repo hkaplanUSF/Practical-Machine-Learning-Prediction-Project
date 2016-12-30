@@ -262,9 +262,14 @@ Levels: A B C D E
 A B C D E 
 7 8 1 1 3 
 </pre>
+
+The majority of the 20 participants either did the curls Exactly according to the specification (A) or
+by Throwing their elbows to the front (B).
+
 <p class= cit>
+<text style="font-size:12px">
 Reference:<br>
-Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13) . Stuttgart, Germany: ACM SIGCHI, 2013.
+Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13) . Stuttgart, Germany: ACM SIGCHI, 2013.</text>
 </p>
 </body>
 </html>
