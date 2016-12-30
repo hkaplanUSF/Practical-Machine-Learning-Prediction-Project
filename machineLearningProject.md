@@ -225,18 +225,13 @@ myTest$predRight <- predRF==myTest$classe;
 qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
 
 # Plot the Random Forest model
-layout(matrix(c(1,2),nrow=1),
-       width=c(4,1))
-par(mar=c(5,4,4,0))
-plot(modFitRF, log="y",  yaxt = "n")
-par(mar=c(5,0,4,2)) #No margin on the left side
-plot(c(0,1),type="n", axes=F, xlab="", ylab="")
+plot(modFitRF, uniform=TRUE, main="Error Rate for Random Forest")
 legend("topright", colnames(modFitRF$err.rate),col=1:4,cex=0.8,fill=1:4)
 </pre>
 
 Plot:<br>
 
-<img src="https://pmzfdq.by3301.livefilestore.com/y3meod_LeEYQOcIZRSeGvrOcDIX29Bhakctcov1CgTanBHddjfR8nZxEgrmWtOtm4z-U0l_NH54tJzqRltpZ-p-xZKFUVE9VxOhw98XFDxEuVWvySk1vstCtwO6UpjCfG96MyFsxjSr68FVtt6pzMLzEP21tTkdb3bJ42ZxkGS4qTM?width=740&height=505&cropmode=none" alt="errorPlot" style="width:370px; height:202px;">
+<img src="https://bsdfdq.by3301.livefilestore.com/y3mfGr5E_Rx3FrgD0csPvf82prDMryXklb2gndHNyc8qauf-J7SZmnUh6mX1gDVpmajJjErxmeT8mq1JbepdS2ndkmAXDpCXX-ARO0xCYIniXacW7Jt_zoT4RjcqXe3EBr-axHTeGyOs4JcPR7a6t0WQKQoP0vfNJZdBk_w1ATq17k?width=552&height=325&cropmode=none" alt="errorPlot" style="width:370px; height:202px;">
 <pre class="results">
     DT/rpart speed        vs       Random Forest
   user  system elapsed         user  system elapsed 
