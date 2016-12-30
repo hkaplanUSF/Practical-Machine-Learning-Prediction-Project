@@ -249,12 +249,7 @@ Detection Rate         0.2845   0.1917   0.1735   0.1624   0.1834
 Detection Prevalence   0.2854   0.1923   0.1758   0.1630   0.1835
 Balanced Accuracy      0.9994   0.9950   0.9961   0.9950   0.9989
 </pre>
-
 <pre class="code">
-#Cross Validation, Overfitting.  out-of-sample error is: - 1- .9942 = .0058
-myTest$predRight <- predRF==myTest$classe;
-qplot(classe, data=myTest, main="Predictions") + facet_grid(predRight ~ .)
-
 # Plot the Random Forest model
 plot(modFitRF, uniform=TRUE, main="Error Rate for Random Forest")
 legend("topright", colnames(modFitRF$err.rate),col=1:4,cex=0.8,fill=1:4)
