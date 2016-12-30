@@ -194,6 +194,7 @@ Next I try the Random Forest Model. Classe against all the processed / cleaned d
 <pre class="code">
 ##I will try to use Random Forest
 #Random Forest Model 
+set.seed(1226)
 modFitRF <- randomForest(classe ~. , data=myTrain)
 modFitRF
 predRF <- predict(modFitRF, myTest, type="class") 
