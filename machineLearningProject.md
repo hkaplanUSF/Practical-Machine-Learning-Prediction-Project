@@ -21,8 +21,8 @@ Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible t
 </p>
 <h2>Project Goal</h2>
 The goal of your project is to predict the manner in which the 20 participants did the exercise (Unilateral Dumbbell Biceps Curl).<br> 
-This is the "classe" variable in the training set. Using the training set I test various training models, access the outcomes, and
-<br>apply the final model(s) to the test data, to generate the prediction.<br>
+This is the "classe" variable in the training set. Using the training set I test various training models, access the outcomes, and then
+<br>apply the final model(s) to the test data, to generate the prediction. The out-of-sample error will be based on the total accuracy possible 1 (100%) - the accuracy value produced by the predictive model.<br>
 The classe or categories that the manner of the exercise fall under are as follows:<br>
 
 <ul>
